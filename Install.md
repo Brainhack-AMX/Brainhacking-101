@@ -75,14 +75,44 @@ Instructions for installing the Neurodebian Virtual Machine are [here](http://ne
  * Boto
  * Starcluster
  * X2Go Client
- * Cyberduck
+ * Cyberduck (or CloudExplorer for Linux users)
 
 Download Python if you have not already using the instructions above.  Then type the following in a terminal to install the AWS Command Line Interface, boto and Starcluster:
 
 `pip install awscli boto starcluster`
 
+You will also need to configure the AWS CLI by following the instructions [here](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+
 X2Go will allow you to pull up a desktop session on a running instance of an Amazon Machine Image.  To install the the X2Go client for Linux, Mac OS X, or Windows, follow the instructions [here](http://wiki.x2go.org/doku.php/doc:installation:x2goclient).
 
 **Note for OS X: We have encountered difficulties with X2Go and keyboard mappings when using older versions of Apple X11.  If you come across such issues (i.e., control keys not working), try updating to the latest version of XQuartz using [this link](http://xquartz.macosforge.org/landing/).**
 
-Cyberduck will allow you to browse Amazon S3 buckets (storage areas for files).  You can download Cyberduck for Mac OS X, and Windows [here](https://cyberduck.io/).
+Cyberduck will allow you to browse Amazon S3 buckets (storage areas for files).  You can download Cyberduck for Mac OS X and Windows [here](https://cyberduck.io/).
+
+Linux users can use CloudExplorer.  To install Cloud Explorer, first install its dependencies:
+
+### Debian/Ubuntu Linux
+
+```
+sudo apt-get install openjdk-8-jre openjdk-8-jdk ant
+```
+
+### CentOS/RHEL
+
+```
+sudo yum -y install git java-1.8-openjdk java-1.8.0-openjdk-devel ant
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+```
+
+Then type the following commands in a terminal:
+
+```
+git clone https://github.com/rusher81572/cloudExplorer.git
+cd cloudExplorer
+ant
+```
+
+To start CloudExplorer, make sure that you are within the *cloudExplorer* directory and then type:
+
+`java -jar dist/CloudExplorer.jar`
