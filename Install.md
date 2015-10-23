@@ -55,8 +55,10 @@ Download Python if you have not already using the instructions above.  Then type
 
 Download Python and nibabel if you have not already using the instructions above.  Then type the following in a terminal:
 
-`pip install scikit-learn matplotlib`
-`pip install -U --user nilearn`
+```
+pip install scikit-learn matplotlib
+pip install -U --user nilearn
+```
 
 ## Neurodebian
 
