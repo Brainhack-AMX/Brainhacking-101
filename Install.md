@@ -27,14 +27,14 @@ Download Git for Windows [here](https://git-for-windows.github.io/).
 ## Python
 
 ### Software to install
- * Anaconda
+ * Anaconda (Python 2.7)
  * Pip
  * IPython
  * Jupyter
  * Numpy
  * Scipy
 
-You should download a scientific Python distribution such as Anaconda, which has binaries for Linux, Mac OS X, and Windows that can be found [here](https://www.continuum.io/downloads).
+You should download a scientific Python distribution such as Anaconda, which has binaries for Linux, Mac OS X, and Windows that can be found [here](https://www.continuum.io/downloads).  Make sure that you download a binary with Python 2.7 (not Python 3.4).
 Anaconda comes with a useful command for managing packages (`conda`) that complements the conventional Python package manager (`pip`) well.
 Installing some packages on Mac OS X is particularly difficult without using a Python distribution such as Anaconda.
 The following installation commands assume the use of Anaconda, although you may also want to try out [Enthought Canopy](https://store.enthought.com/).
