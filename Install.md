@@ -18,7 +18,7 @@ Type the following command in a terminal:
 `sudo yum install -y git`
 
 ### Mac OS X
-Download the Xcode Command Line Tools [here](https://developer.apple.com/downloads/index.action) (you will need to obtain an Apple ID if you do not have one already).  Git is included as one of the tools.
+Download the Xcode Command Line Tools [here](https://developer.apple.com/downloads/index.action) (you will need to obtain an Apple ID if you do not have one already).  Git is included as one of the tools. (If you have trouble making a secure connection to Apple, check for any anti-virus software that might be blocking web connections, such as Sophos.)
 
 ### Windows
 
